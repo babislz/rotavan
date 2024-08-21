@@ -1,7 +1,7 @@
 const Header1 = () => {
   return (
     <>
-      <body className="flex flex-col">
+      <div className="flex flex-col fixed top-0">
         <div className="w-screen bg-customGray h-12 text-white flex justify-around">
           <div className="flex items-center gap-2">
             <img src="/src/assets/location.svg" alt="" />
@@ -18,20 +18,20 @@ const Header1 = () => {
             <h5>(41) 98729-5409</h5>
           </div>
         </div>
-        <div className="w-screen h-44 bg-white flex items-center">
+        <div className="w-screen h-36 bg-white flex items-center justify-between">
           <img
-            className="object-cover w-2/12"
+            className="object-cover w-2/12 ml-16"
             src="/src/assets/rotavan-logo-light-mode.png"
             alt="Logo"
           />
-          <div className="flex space-x-10">
-            <h4>Home</h4>
-            <h4>Serviços</h4>
-            <h4>Veículos</h4>
-            <h4>Contato</h4>
+          <div className="flex space-x-10 pe-64">
+              <h4 className="relative cursor-pointer before:absolute before:left-0 before:bottom-0 before:w-0 before:h-0.5 before:bg-customYellow hover:before:w-full transition-all duration-300">Home</h4>
+              <h4 className="relative cursor-pointer before:absolute before:left-0 before:bottom-0 before:w-0 before:h-0.5 before:bg-customYellow hover:before:w-full transition-all duration-300">Serviços</h4>
+              <h4 className="relative cursor-pointer before:absolute before:left-0 before:bottom-0 before:w-0 before:h-0.5 before:bg-customYellow hover:before:w-full transition-all duration-300">Veículos</h4>
+              <h4 className="relative cursor-pointer before:absolute before:left-0 before:bottom-0 before:w-0 before:h-0.5 before:bg-customYellow hover:before:w-full transition-all duration-300">Contato</h4>
           </div>
         </div>
-      </body>
+      </div>
     </>
   );
 };

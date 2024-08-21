@@ -8,8 +8,11 @@ export default {
     extend: {
       colors: {
         customGray: '#404040',
+        customYellow: '#FAA72B',
       },
-      
+      backgroundImage: {
+        headerBottomImage: "url('/src/assets/frota-bg.svg')"
+      }
     },
   },
   plugins: [],
