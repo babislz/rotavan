@@ -1,7 +1,9 @@
 const Header1 = () => {
   return (
     <>
-      <div className="flex flex-col fixed top-0">
+      <div className="flex flex-col fixed top-0 shadow-md" style={{
+        zIndex: "999"
+      }}>
         <div className="w-screen bg-customGray h-12 text-white flex justify-around">
           <div className="flex items-center gap-2">
             <img src="/src/assets/location.svg" alt="" />
